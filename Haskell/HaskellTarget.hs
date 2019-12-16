@@ -4,6 +4,6 @@ import PeanoNat
 import Fin
 import Instance
 import Syntax hiding (unsafeCoerce, __)
-import Word
+import Word hiding  (unsafeCoerce, __)
 import Test hiding (unsafeCoerce, __, counter)
 import NativeTest hiding (unsafeCoerce, Any)

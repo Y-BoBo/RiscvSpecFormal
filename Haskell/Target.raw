@@ -7,7 +7,7 @@ import Instance
 import Rtl
 import Syntax hiding (unsafeCoerce, __)
 import Extraction hiding (unsafeCoerce, Any)
-import Word
+import Word hiding (unsafeCoerce, __)
 import LibStruct hiding (unsafeCoerce, __)
 import Test hiding (unsafeCoerce, Any)
 import UnverifiedIncompleteCompiler hiding (unsafeCoerce, Any)
