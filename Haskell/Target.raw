@@ -3,7 +3,7 @@ import CompilerSimple hiding (unsafeCoerce, __)
 import EclecticLib hiding (__)
 import PeanoNat
 import Fin
-import Instance hiding (unsafeCoerce, __)
+import Instance
 import Rtl
 import Syntax hiding (unsafeCoerce, __)
 import Extraction hiding (unsafeCoerce, Any)
