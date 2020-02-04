@@ -135,8 +135,8 @@ then
     notice "Compiling the Haskell generator."
     cp Haskell/HaskellTarget.hs HaskellGen
     cp Haskell/Main.hs HaskellGen
-    execute "time ghc $GHCFLAGS $parallel -O1 --make -iHaskellGen -iKami ./Haskell/Main.hs"
-  #  execute "time ghc $GHCFLAGS $parallel -prof -fprof-auto +RTS -A128m -n4m -s -RTS -O1 --make -iHaskellGen -iKami ./Haskell/Main.hs"
+    #execute "time ghc $GHCFLAGS $parallel -prof -fprof-auto +RTS -A128m -n4m -s -RTS -O2 --make -iHaskellGen -iKami ./Haskell/Main.hs"
+    execute "time ghc $GHCFLAGS $parallel -main-is CoqMain +RTS -A128m -n4m -s -RTS -O2 --make -iHaskellGen -iKami ./Haskell/CoqMain.hs"
     notice "Done: Generated Main."
   else
     notice "Compiling Simulation Test."
